@@ -29,7 +29,7 @@ abstract class Pokemon {
         return $this -> pointsDeVie <= 0;
     }
 
-    abstract function capaciteSpecial(Pokemon $adversaire): void;
+    abstract public function capaciteSpeciale(Pokemon $adversaire): void;
 
 }
 
@@ -105,11 +105,12 @@ class attaque {
     }
 
 class  Combattant {
-    private function seBattre (Pokemon $adversaire): void;
-    public function utiliserAttaqueSpeciale(Pokemon $adversaire): void;
+    private function seBattre(Pokemon $adversaire): void{}
+    public function utiliserAttaqueSpeciale(Pokemon $adversaire): void{}
 }
 
 trait soigner{
+
     public function soigner(): void {
         $this -> pointsDeVie = 100;
         echo "Le pokemon a été soigné";
