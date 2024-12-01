@@ -1,5 +1,9 @@
 <?php
-
+require_once("Combat.php");
+require_once("Pokemon.php");
+require_once("Combattant.php");
+require_once("soigner.php");
+require_once("attaque.php");
 class PokemonFeu extends Pokemon {
         public function capaciteSpeciale(Pokemon $adversaire): void {
             if ($adversaire -> type === "Plante"){

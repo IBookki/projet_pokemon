@@ -1,4 +1,9 @@
 <?php
+require_once("Combat.php");
+require_once("Pokemon.php");
+require_once("Combattant.php");
+require_once("soigner.php");
+require_once("Types.php");
 
 class attaque {
     private string $nom;
