@@ -1,11 +1,11 @@
 <?php 
 
 abstract class Pokemon {
-    protected string $nom;
-    protected string $type;
-    protected int $pointsDeVie;
-    protected int $puissanceAttaque;
-    protected int $defense;
+    public string $nom;
+    public string $type;
+    public int $pointsDeVie;
+    public int $puissanceAttaque;
+    public int $defense;
 
     public function __construct(string $nom, string $type, int $pointsDeVie, int $puissanceAttaque, int $defense) {
         $this -> nom = $nom;
