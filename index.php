@@ -20,6 +20,7 @@
     <div class="pokemon-list">
         <?php foreach ($listePokemons as $pokemon): ?>
             <div class="pokemon-card">
+                <img src=<?= $pokemon->image ?> alt="">
                 <h2><?= $pokemon->nom ?></h2>
                 <p>Type : <?= $pokemon->type ?></p>
                 <p>Points de vie : <?= $pokemon->pointsDeVie ?></p>
@@ -32,19 +33,21 @@
     <form action="combat.php" method="POST">
         <label for="pokemon1">Premier Pokémon :</label>
         <select name="pokemon1" id="pokemon1" required>
-            <?php foreach ($pokemonListe as $index => $pokemon): ?>
+            <?php foreach ($listePokemons as $index => $pokemon): ?>
                 <option value="<?= $index ?>"><?= $pokemon->nom ?></option>
             <?php endforeach; ?>
         </select>
 
         <label for="pokemon2">Deuxième Pokémon :</label>
         <select name="pokemon2" id="pokemon2" required>
-            <?php foreach ($pokemonListe as $index => $pokemon): ?>
+            <?php foreach ($listePokemons as $index => $pokemon): ?>
                 <option value="<?= $index ?>"><?= $pokemon->nom ?></option>
             <?php endforeach; ?>
         </select>
 
-        <button type="submit">Lancer le combat</button>
+        <div ><button class="center"type="submit">Lancer le combat</button></div>
     </form>
+    
+    
 </body>
 </html>

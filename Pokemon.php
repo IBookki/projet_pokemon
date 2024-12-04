@@ -6,13 +6,15 @@ abstract class Pokemon {
     public int $pointsDeVie;
     public int $puissanceAttaque;
     public int $defense;
+    public string $image;
 
-    public function __construct(string $nom, string $type, int $pointsDeVie, int $puissanceAttaque, int $defense) {
+    public function __construct(string $nom, string $type, int $pointsDeVie, int $puissanceAttaque, int $defense, string $image) {
         $this -> nom = $nom;
         $this -> type = $type;
         $this -> pointsDeVie = $pointsDeVie;
         $this -> puissanceAttaque = $puissanceAttaque;
         $this -> defense = $defense;
+        $this -> image = $image;
     }
 
     public function attaquer(Pokemon $adversaire): void {
