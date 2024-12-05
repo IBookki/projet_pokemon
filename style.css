@@ -67,13 +67,15 @@ button:hover {
 }
 
 .combat-result {
-    background: #fff;
+    text-align: center;
+    background: #2c2a2a;
+    color: #ddd;
     padding: 15px;
     border: 1px solid #ddd;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     margin: 20px auto;
-    width: 60%;
+    width: 40%;
 }
 
 a {
@@ -89,5 +91,10 @@ a:hover {
 }
 
 center  {   
+    justify-content: center;
+}
+
+.flex {
+    display: flex;
     justify-content: center;
 }

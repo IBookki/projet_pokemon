@@ -30,7 +30,7 @@
         <?php endforeach; ?>
     </div>
 
-    <form action="combat.php" method="POST">
+    <form action="duel.php" method="POST">
         <label for="pokemon1">Premier Pokémon :</label>
         <select name="pokemon1" id="pokemon1" required>
             <?php foreach ($listePokemons as $index => $pokemon): ?>
