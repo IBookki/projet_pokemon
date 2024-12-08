@@ -7,25 +7,6 @@ Les utilisateurs peuvent sélectionner deux Pokémon et les faire s'affronter en
 Chaque Pokémon a des attributs tels que le type, les points de vie, la puissance d'attaque, et la défense.
 Les types incluent Feu, Eau et Plante, chacun ayant des caractéristiques et des capacités spéciales.
 
-## Structure du projet
-
-PROJET_POKEMON/
-|-- classes/
-|   |-- Combat.php
-|   |-- InterfaceCombattant.php
-|   |-- Pokemon.php
-|   |-- PokemonFeu.php
-|   |-- PokemonEau.php
-|   |-- PokemonPlante.php
-|   |-- TraitSoins.php
-|-- styles/
-|   |-- style.css
-|-- index.php
-|-- duel.php
-|-- setup.sql
-|-- config.php
-|-- README.MD
-
 ## Prérequis
 - PHP 7.4 ou supérieur
 - Serveur local (ex. : XAMPP, WAMP, MAMP, ou serveur de production)
